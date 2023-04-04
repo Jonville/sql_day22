@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>테이블 만들기3</title>
+
+    <style>
+        table, th, td {
+        border:1px solid #ccc;
+        border-collapse: collapse;
+        }
+        th, td { padding:10px 20px; }
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>     <!-- head 부분 (관리용)-->
+            <tr>
+                <th>a</th>  <!-- 테이블의 헤더 부분. // 굵은 글씨-->
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+            </tr>
+        </thead>
+
+        <tbody>     <!-- 바디 부분 (관리용)-->
+            <tr>    <!-- 행 (줄)-->
+                <td>1</td>    <!-- 열 (칸)-->
+                <td>2</td>  <!-- 열을 2칸만큼 차지-->
+                <td>3</td>
+                <td colspan="3">4</td>
+            </tr>
+            <tr>    <!-- 행 (줄)-->
+                <td rowspan="2" colspan="2">5</td>    <!-- 행을 2칸만큼 차지-->
+                <td>6</td>
+                <td>7</td>
+                <td rowspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>    <!-- 행 (줄)-->
+                
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                
+                
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
